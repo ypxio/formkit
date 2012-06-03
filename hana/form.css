@@ -1,0 +1,175 @@
+/*
+* Form Stylesheet
+*/
+
+body {
+	background: #edeeee;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Global Form Styles */
+
+input, textarea, select, option, .search, label {
+	display: inline-block;
+  width: 214px;
+	margin: 5px;
+
+  font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+
+	color: #787878;
+}
+
+/* Fieldset & Legend Styles */
+
+fieldset {
+  padding: 10px;
+
+  background: #fff;
+
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+fieldset legend {
+  display: block;
+  padding: 5px;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+/* Global Text Input Styles */
+
+input[type=text], input[type=search], input.search_txt, textarea, select {
+	height: 18px;
+	padding: 5px;
+
+  background: #e9e9e9;
+
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+}
+
+/* Global Text Input Focused Styles */
+
+input[type=text]:focus, input[type=search]:focus, input.search_txt:focus, textarea:focus {
+  background: #fff;
+}
+
+/* Specific Plaintext input styles */
+
+input[type=text] {
+	background: #e9e9e9;
+
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1),
+				0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+	/* support for input true / false */
+input[type=text].true { background: rgba(157, 192, 105, 0.5); }
+input[type=text].false { background: rgba(198, 60, 60, 0.5); }
+
+/* Specific Search input styles */
+
+.search {
+	width: 225px;
+	position: relative;
+
+	border-radius: 6px;
+	border: 1px solid #cccccc;
+	background: rgb(250,250,250);
+	background: -moz-linear-gradient(top,  rgba(250,250,250,1) 0%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,250,250,1)), color-stop(100%,rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ededed',GradientType=0 );
+
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search .search_bt {
+	position: absolute;
+  width: 80px;
+
+	right: 3px;
+	top: 0;
+  height: 30px;
+  padding: 5px;
+
+	font-weight: normal;
+
+	border-radius: 0 6px 6px 0;
+	border: 1px solid #cccccc;
+	background: rgb(250,250,250);
+	background: -moz-linear-gradient(top,  rgba(250,250,250,1) 0%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,250,250,1)), color-stop(100%,rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ededed',GradientType=0 );
+
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+input.search_txt {
+  width: 180px;
+	background: #e9e9e9;
+
+	border-radius: 6px 0 0 6px;
+
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1),
+				0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Button Style */
+
+input[type="submit"], input[type="button"] {
+	padding: 10px;
+
+	color: #717171;
+
+	font-weight: bold;
+
+	border: 1px solid #c9c9c9;
+	border-radius: 6px;
+
+	background: rgb(250,250,250);
+	background: -moz-linear-gradient(top,  rgba(250,250,250,1) 0%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(250,250,250,1)), color-stop(100%,rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	background: linear-gradient(top,  rgba(250,250,250,1) 0%,rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ededed',GradientType=0 );
+
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea Style */
+
+textarea {
+  min-height: 100px;
+
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Select Style */
+
+select {
+  height: 30px;
+
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1),
+				0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+select option {
+  display: block;
+}
